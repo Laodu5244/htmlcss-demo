@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input动画</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* 设置body最小高度为100%窗口高度*/
+            min-height: 100vh;
+            /* 渐变背景 */
+            background: linear-gradient(200deg, #0c3483, #a2b6df)
+        }
+
+        .wrapper {
+            width: 450px;
+            background-color: #fff;
+            padding: 40px;
+            /* 盒子阴影 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .input-date {
+            position: relative;
+            width: 100%;
+            height: 40px;
+        }
+
+        .input-date input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            font-size: 17px;
+            border-bottom: 2px solid #c0c0c0;
+        }
+
+        /* 输入框获得焦点时 */
+        .input-date input:focus~label,
+        /* 输入框的值为合法时 */
+        .input-date input:valid~label {
+            /* label上移,同时改变字号颜色 */
+            transform: translateY(-25px);
+            font-size: 15px;
+            color: #2c7;
+
+        }
+
+        .input-date label {
+            position: absolute;
+            bottom: 10px;
+            left: 0px;
+            color: #808080;
+            /* 这个属性可以使点击label穿透到输入框 */
+            pointer-events: none;
+            /* 现在动画有点生硬，在这里需要给动画加个过渡 */
+            transition: all 0.3s ease;
+        }
+
+        .input-date .underline {
+            position: absolute;
+            bottom: 0;
+            height: 2px;
+            width: 100%;
+            background-color: #2c7;
+            transform: scaleX(0);
+            transition: all 0.3s ease;
+        }
+
+        .input-date input:focus~.underline,
+        /* 输入框的值为合法时 */
+        .input-date input:valid~.underline {
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="input-date">
+            <input type="text" required>
+            <div class="underline"></div>
+            <label for="">请输入</label>
+        </div>
+    </div>
+</body>
+
+</html>
