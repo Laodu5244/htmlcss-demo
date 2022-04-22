@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>海盗船</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* 海的效果 */
+      .sea {
+        position: fixed;
+        bottom: 0;
+      }
+      .sea1 {
+        position: absolute;
+        bottom: 100px;
+        height: 80px;
+        animation: sea1 5s linear infinite;
+        z-index: 1;
+      }
+      .sea2 {
+        position: absolute;
+        bottom: 50px;
+        height: 80px;
+        animation: sea2 5s infinite;
+        z-index: 2;
+      }
+      .sea3 {
+        position: absolute;
+        bottom: 0;
+        height: 80px;
+        animation: sea3 5s linear infinite;
+        z-index: 3;
+      }
+      @keyframes sea1 {
+        50% {
+          transform: translate(-200px);
+        }
+      }
+      @keyframes sea2 {
+        50% {
+          transform: translate(-150px);
+        }
+      }
+      @keyframes sea3 {
+        50% {
+          transform: translate(-100px);
+        }
+      }
+
+      /* 船的效果 */
+
+      .ship {
+        position: fixed;
+        left: 35%;
+        bottom: 20%;
+        width: 400px;
+        height: 400px;
+        animation: ship 2.5s linear infinite;
+      }
+      @keyframes ship {
+        30% {
+          transform: rotate(15deg);
+        }
+        85% {
+          transform: rotate(-5deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+      /* 鱼的效果 */
+      .fish {
+        width: 100px;
+        height: 50px;
+        animation: fish 7s ease-in-out infinite;
+        z-index: -1;
+      }
+      @keyframes fish {
+        15% {
+          transform: translate(250px, -200px);
+        }
+        30% {
+          transform: translate(500px, 0);
+        }
+        45% {
+          transform: translate(800px, -200px);
+        }
+        60% {
+          transform: translate(1000px, 0);
+        }
+        75% {
+          transform: translate(1200px, -200px);
+        }
+        90% {
+          transform: translate(1400px, 0);
+        }
+      }
+      .bg {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <img class="bg" src="img/bg.png" />
+      <img class="ship" src="img/ship.png" />
+      <div class="sea">
+        <img class="sea1" src="img/wave1.png" />
+        <img class="sea2" src="img/wave2.png" />
+        <img class="sea3" src="img/wave3.png" />
+        <img class="fish" src="img/fish.png" />
+      </div>
+    </section>
+  </body>
+</html>
