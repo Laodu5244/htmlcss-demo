@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.title {
+  margin: 0 auto;
+  width: 560px;
+  height: 80px;
+}
+.title h3 {
+  font-family: "STXingkai";
+  font-size: 38px;
+  text-align: center;
+  line-height: 80px;
+  font-family: KaiTi;
+}
+.content {
+  width: 420px;
+  margin: 0 auto;
+}
+.box {
+  margin: 5px;
+  width: 420px;
+  height: 120px;
+  display: flex;
+  background-color: burlywood;
+}
+.front {
+  width: 120px;
+  height: 120px;
+}
+ul {
+  margin-left: 20px;
+}
+
+.biaoti {
+  font-weight: 700;
+  font-size: 20px;
+}
+.zhuanji {
+  margin: 6px;
+  color: #666;
+  font-size: 18px;
+}
+.year {
+  margin: 6px;
+  color: coral;
+  font-size: 16px;
+}
+.go {
+  margin-top: 1px;
+  width: 80px;
+  height: 30px;
+}
