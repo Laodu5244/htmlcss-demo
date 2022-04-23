@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  letter-spacing: 0.03rem;
+}
+header {
+  position: relative;
+  width: 100%;
+  height: 0.4rem;
+}
+header img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 0.4rem;
+}
+.xiao {
+  height: 0.88rem;
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+.xiao img {
+  margin: 0 0.38rem;
+  height: 0.3rem;
+  width: 0.3rem;
+}
+.xiao h2 {
+  font-size: 0.3rem;
+  font-weight: 400;
+  background-color: #f2f2f2;
+}
+.sou {
+  display: flex;
+  margin: 0.3rem auto 0;
+  width: 6.7rem;
+  height: 0.7rem;
+  border-radius: 0.35rem;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+.sou img {
+  height: 0.3rem;
+  width: 0.3rem;
+  margin: 0 0.25rem;
+}
+.sou input {
+  font-size: 0.22rem;
+  background-color: #f2f2f2;
+  color: #999;
+  border: none;
+  letter-spacing: 0.03rem;
+  height: 0.4rem;
+  width: 5.6rem;
+}
+.logo {
+  margin: 0.35rem auto;
+  width: 6.7rem;
+  height: 2.65rem;
+}
+.logo img {
+  width: 100%;
+}
+.box1 {
+  height: 4.1rem;
+  width: 6.7rem;
+  margin: 0 auto;
+  border-top: 0.02rem solid #f0f0f0;
+}
+.jing {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 1rem;
+  width: 6.7rem;
+}
+.item1 {
+  font-size: 0.3rem;
+}
+.item2 {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.24rem;
+  color: #b2b2b2;
+}
+.item2 img {
+  margin-left: 0.2rem;
+  height: 0.25rem;
+}
+.boxson {
+  position: relative;
+  width: 6.7rem;
+  margin: 0 auto;
+  display: flex;
+}
+.pic {
+  width: 2rem;
+}
+.boxson .text h3 {
+  margin-top: 0.12rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.28rem;
+  font-weight: 400;
+}
+.boxson .text p {
+  font-size: 0.24rem;
+  color: #b2b2b2;
+}
+.boxson .btn {
+  position: absolute;
+  right: 0.3rem;
+  margin-left: 0.72rem;
+  width: 0.96rem;
+  height: 0.42rem;
+  align-self: center;
+  font-size: 0.24rem;
+  color: #fff;
+  background-color: #00ccff;
+  border-radius: 0.21rem;
+  border: none;
+}
+.boxson .text {
+  margin-left: 0.26rem;
+}
+
+.boxson2 {
+  margin-top: 0.25rem;
+}
+
+.box2 {
+  height: 2.65rem;
+  width: 6.7rem;
+  margin: 0 auto;
+  border-top: 0.02rem solid #f0f0f0;
+}
+.box3 {
+  height: 2.65rem;
+  width: 6.7rem;
+  margin: 0 auto;
+  border-top: 0.02rem solid #f0f0f0;
+}
+.box4 {
+  position: relative;
+  height: 1.5rem;
+  width: 6.7rem;
+  margin: 0 auto;
+  border-top: 0.02rem solid #f0f0f0;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.01rem;
+}
+.box4 h5 {
+  margin-top: 0.4rem;
+  font-weight: 400;
+  color: #00ccff;
+  font-size: 0.22rem;
+}
+.box4 h5 span {
+  display: inline-block;
+  margin: 0 0.15rem;
+  color: #b2b2b2;
+}
+.box4 p {
+  margin-top: 0.15rem;
+  color: #b2b2b2;
+  font-size: 0.22rem;
+}
+.box4 img {
+  position: absolute;
+  right: 0;
+  bottom: 0.3rem;
+  width: 0.58rem;
+  height: 0.58rem;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 1rem;
+  background-color: #f2f2f2;
+}
+.footer img {
+  width: 0.55rem;
+  height: 0.4rem;
+}
+.footer div {
+  font-size: 0.26rem;
+  color: #999;
+}
+.footer .foo1 div {
+  color: #00ccff;
+}
